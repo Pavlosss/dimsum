@@ -19,8 +19,9 @@ body {
 }
 
 .container {
+  position: relative;
   display: grid;
-  grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 5rem calc(100vh - 5rem);
   grid-template-columns:
     [ full-start]
     minmax(6rem, 1fr) [center-start] repeat(
@@ -28,4 +29,6 @@ body {
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
+
+  height: 2000px; //testing
 }

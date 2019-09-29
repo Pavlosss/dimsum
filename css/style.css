@@ -53,8 +53,9 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  margin-bottom: 4rem; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -75,10 +76,11 @@ body {
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 10rem;
+  border-radius: 0.5rem;
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
+  font-weight: 600;
   border: none;
   cursor: pointer; }
 
@@ -101,7 +103,7 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #333; }
+  color: #2e444f; }
   .btn--white::after {
     background-color: #fff; }
 
@@ -121,18 +123,14 @@ body {
   background-image: linear-gradient(to right bottom, rgba(244, 201, 85, 0.8), rgba(156, 122, 0, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
-  position: relative; }
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content;
+  align-content: center;
+  justify-content: center;
+  justify-items: center; }
   @supports (clip-path: polygon(0 0, 0 0, 0 0, 0 0)) or (-webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0)) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
       height: 95vh; } }
-  .header__text-box {
-    width: 80%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    /* this top and left are in relation to the parent element */
-    transform: translate(-50%, -50%);
-    /* Transform this in relation to the element itself*/ }

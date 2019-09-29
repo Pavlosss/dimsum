@@ -1,9 +1,10 @@
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
+  text-align: center;
 
   backface-visibility: hidden;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 
   &--main {
     display: block;

@@ -18,14 +18,21 @@
     height: 95vh;
   }
 
-  &__text-box {
-    width: 80%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    /* this top and left are in relation to the parent element */
-    transform: translate(-50%, -50%);
-    /* Transform this in relation to the element itself*/
-  }
+  display: grid;
+  grid-template-columns: max-content;
+  align-content: center;
+  justify-content: center;
+
+  justify-items: center;
+
+  //   &__text-box {
+  //     width: 80%;
+  //     position: absolute;
+  //     text-align: center;
+  //     top: 50%;
+  //     left: 50%;
+  //     /* this top and left are in relation to the parent element */
+  //     transform: translate(-50%, -50%);
+  //     /* Transform this in relation to the element itself*/
+  //   }
 }

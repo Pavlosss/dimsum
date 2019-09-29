@@ -1,6 +1,8 @@
 // COLORS
 
-$color-primary: #c59e2d;
+$color-primary: #c59e2d; // L 69
+$color-primary-light: #f4c955; // L85
+$color-primary-dark: #9c7a00; // L55
 
 $color-secondary: #2e444f;
 
@@ -12,5 +14,7 @@ $color-grey-light: #e6e6e6;
 $color-grey-dark: #333;
 
 // FONT VARIABLE
-
 $font-primary: "Open Sans", sans-serif;
+
+// FONT
+$default-font-size: 1.6rem;

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns:
     [ full-start]
-    minmax(6rem, 1fr) [center-start] repeat(
+    minmax(4rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 14rem) [col-end]
     )
@@ -11,10 +11,10 @@
 
 .menu {
   grid-column: center-start / center-end;
-  margin: 15rem 0;
+  margin: 10rem 0;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   row-gap: 2rem;
   column-gap: 5rem;
 
@@ -26,8 +26,8 @@
     background-color: $color-primary;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)
+        rgba($color-primary-light, 3),
+        rgba($color-primary-dark, 0.7)
       ),
       url(../img/hero.jpg);
     background-size: cover;
@@ -39,15 +39,17 @@
 
   &__items--with-price {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: end;
+    grid-template-columns: max-content 1fr;
   }
 
-  &__item {
-    color: $color-grey-light;
-    font-size: 1.5rem;
-    font-weight: 600;
-    justify-self: start;
+  &__item-name,
+  &__item-price {
+    color: $color-secondary;
+    font-size: $default-font-size;
+    font-weight: 700;
+  }
+  &__item-price {
+    justify-self: end;
   }
 
   &__headline {

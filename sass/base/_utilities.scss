@@ -1,20 +1,46 @@
 .mb-sm {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .mb-md {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .mb-lg {
   margin-bottom: 4rem;
 }
 .mb-hg {
-  margin-bottom: 8rem;
+  margin-bottom: žrem;
 }
 
 .ml-sm {
   margin-left: 1rem !important;
 }
+.ml-md {
+  margin-left: 2rem !important;
+}
+.ml-lg {
+  margin-left: 4rem !important;
+}
+.ml-hg {
+  margin-left: 6rem !important;
+}
+
+.mr-sm {
+  margin-right: 1rem !important;
+}
+.mr-md {
+  margin-right: 2rem !important;
+}
+.mr-lg {
+  margin-right: 4rem !important;
+}
+.mr-hg {
+  margin-right: 6rem !important;
+}
 
 .pr-sm {
   padding-right: 2rem;
+}
+
+.gr-all-clo {
+  grid-column: 1 / -1 !important;
 }

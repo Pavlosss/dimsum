@@ -264,8 +264,10 @@ body {
 
 .navigation__list {
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  align-items: center;
+  justify-content: end;
   margin-right: 2rem; }
 
 .navigation__link:link, .navigation__link:visited {
@@ -280,9 +282,14 @@ body {
   display: block;
   transition: all 0.2s; }
 
-.navigation__link:hover, .navigation__link:active {
-  background-color: rgba(255, 255, 255, 0.05);
+.navigation__link:hover, .navigation__link:active, .navigation__link:focus {
+  background-color: rgba(255, 255, 255, 0.05); }
+
+.navigation__link:hover {
   transform: translateY(-3px); }
+
+.navigation__link:active, .navigation__link:focus {
+  transform: translateY(0); }
 
 .container--menu {
   display: grid;

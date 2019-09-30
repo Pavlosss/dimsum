@@ -1,0 +1,40 @@
+.features {
+  grid-column: center-start / center-end;
+  padding-top: 15rem;
+  margin: -5rem 0 10rem 0;
+
+  @supports (display: grid) {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(25rem, 1fr)
+    ); // CSS will add as many tracks as will fin in the container
+    gap: 6rem;
+    align-items: start; // to start all text in the top
+  }
+}
+
+.feature {
+  float: left;
+  width: 33.33333%;
+  margin-bottom: 6rem;
+
+  @supports (display: grid) {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}

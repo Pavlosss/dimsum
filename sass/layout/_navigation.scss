@@ -10,7 +10,8 @@
   &__list {
     list-style: none;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    margin-right: 2rem;
   }
 
   &__link:link,

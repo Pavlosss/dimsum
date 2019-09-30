@@ -64,10 +64,12 @@ body {
   backface-visibility: hidden;
   margin-bottom: 4rem; }
   .heading-primary--main {
-    display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3rem;
     animation: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
@@ -140,7 +142,7 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #2e444f; }
+  color: #333; }
   .btn--white::after {
     background-color: #fff; }
 
@@ -157,8 +159,7 @@ body {
 
 .features {
   grid-column: center-start / center-end;
-  padding-top: 15rem;
-  margin: -5rem 0 10rem 0; }
+  margin: 10rem 0 10rem 0; }
   @supports (display: grid) {
     .features {
       display: grid;
@@ -170,7 +171,7 @@ body {
   float: left;
   width: 33.33333%;
   margin-bottom: 6rem;
-  transition: all 0.5s;
+  transition: all 0.3s;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1.5rem; }
@@ -237,6 +238,7 @@ body {
 
 .navigation__link:link, .navigation__link:visited {
   font-size: 1.4rem;
+  font-weight: 600;
   color: #fff;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;

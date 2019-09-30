@@ -1,0 +1,44 @@
+.container--menu {
+  display: grid;
+  grid-template-columns:
+    [ full-start]
+    minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.menu {
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  row-gap: 2rem;
+  column-gap: 5rem;
+
+  &__type {
+    grid-column: 1 / -1;
+  }
+
+  &__items {
+    background-color: orangered;
+  }
+
+  &__items--with-price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+  }
+
+  &__item {
+    justify-self: start;
+  }
+
+  &__headline {
+    grid-column: 1 / -1;
+    color: white;
+    margin-bottom: 2rem;
+  }
+}

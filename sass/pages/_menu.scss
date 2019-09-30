@@ -23,7 +23,18 @@
   }
 
   &__items {
-    background-color: orangered;
+    background-color: $color-primary;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    border-radius: $default-border-radius;
+    transition: all 0.5s;
   }
 
   &__items--with-price {
@@ -33,6 +44,9 @@
   }
 
   &__item {
+    color: $color-grey-light;
+    font-size: 1.5rem;
+    font-weight: 600;
     justify-self: start;
   }
 
@@ -40,5 +54,9 @@
     grid-column: 1 / -1;
     color: white;
     margin-bottom: 2rem;
+  }
+
+  &__items:hover {
+    transform: scale(1.2);
   }
 }

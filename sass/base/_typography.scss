@@ -25,3 +25,11 @@
     animation: moveInRight 1s ease-out;
   }
 }
+
+.heading-tertiary {
+  font-size: 2rem;
+
+  &--white {
+    color: $color-white;
+  }
+}

@@ -73,6 +73,29 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
 
+.heading-tertiary {
+  font-size: 2rem; }
+  .heading-tertiary--white {
+    color: #fff; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-hg {
+  margin-bottom: 8rem; }
+
+.ml-sm {
+  margin-left: 1rem !important; }
+
+.pr-sm {
+  padding-right: 2rem; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -177,14 +200,25 @@ body {
   .menu__type {
     grid-column: 1 / -1; }
   .menu__items {
-    background-color: orangered; }
+    background-color: #c59e2d;
+    background-image: linear-gradient(to right bottom, rgba(244, 201, 85, 0.8), rgba(156, 122, 0, 0.8)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    transition: all 0.5s; }
   .menu__items--with-price {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: end; }
   .menu__item {
+    color: #e6e6e6;
+    font-size: 1.5rem;
+    font-weight: 600;
     justify-self: start; }
   .menu__headline {
     grid-column: 1 / -1;
     color: white;
     margin-bottom: 2rem; }
+  .menu__items:hover {
+    transform: scale(1.2); }

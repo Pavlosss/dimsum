@@ -216,6 +216,10 @@ body {
   .feature__text {
     font-size: 1.7rem; }
 
+#map {
+  height: 80rem;
+  width: 80rem; }
+
 .story__pictures {
   background-color: #c59e2d;
   grid-column: full-start / col-end 4;

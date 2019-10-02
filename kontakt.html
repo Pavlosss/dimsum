@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>Google Maps</h1>
+    <div id="map"></div>
+
+    <script>
+
+        const coordiantes = { lat: 50.099471, lng: 14.429128 }
+        function initMap() {
+            // Map options
+            const options = {
+                zoom: 16,
+                center: coordiantes
+            }
+
+            // New map
+            const map = new google.maps.Map(document.getElementById('map'), options)
+
+            // Add marker
+            const marker = new google.maps.Marker({
+                position: coordiantes,
+                map: map,
+                icon: '/img/marker.png',
+                title: 'Dim Sum Spot'
+            })
+
+            const infoWindow = new google.maps.InfoWindow({
+                content: '<h1>Dim Sum Spot</h1> <p>Kokot</p> <a href="https://www.google.com/maps/place/Dim+Sum+Spot/@50.0994424,14.426886,17z/data=!3m1!4b1!4m5!3m4!1s0x470b9530b48324a9:0x2468deaa4d692f1a!8m2!3d50.0994424!4d14.4290747">Navigovat</a>'
+            })
+
+            marker.addListener('click', function () {
+                infoWindow.open(map, marker);
+            })
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfL1q3EOemgx91jT-3cjVBxETDff1dk5Q&callback=initMap"
+        async defer></script>
+
+</body>
+
+</html>
